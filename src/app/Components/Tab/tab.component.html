@@ -1,0 +1,22 @@
+
+<div class="page">
+    <div class="page__bd" style="height: 100%;">
+        <div class="weui-tab">
+            <div class="weui-tab__panel">
+
+            </div>
+            <div class="weui-tabbar" >
+                <a href="javascript:;" 
+                    *ngFor="let item of items" 
+                    (click)="tabChange(item,$event)" 
+                    [ngClass]="setClass(item)" >
+                    <img 
+                        src="{{item === selectedItem ? item.activeSrc : item.src}}" 
+                        alt="" 
+                        class="weui-tabbar__icon">
+                    <p class="weui-tabbar__label">{{item.text}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
