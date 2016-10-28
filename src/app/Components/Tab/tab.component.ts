@@ -5,7 +5,12 @@ import { AppState } from '../../app.service';
 
 @Component({
   selector: 'tab',  
-  
+  styles:[`.page{   
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;}`],
   templateUrl: './tab.component.html'
 })
 export class TabComponent {

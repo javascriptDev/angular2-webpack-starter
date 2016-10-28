@@ -29,9 +29,10 @@ export class HomeComponent {
   items : Object[];
 
   tap(e:Object){
-    this._element.nativeElement.querySelector('.weui-tab__panel').innerHTML= '<div>111</div>'
+     this.fill('啊') ;
   }
-  
+  initPage = ()=>{this.fill(`<div>asdasd</div>`)};
+  fill = (html:String)=>{this._element.nativeElement.querySelector('.weui-tab__panel').innerHTML = html};
   ngOnInit() {
     this.items = [{
       src:'./assets/img/sc.png',
@@ -42,6 +43,6 @@ export class HomeComponent {
       activeSrc:'./assets/img/mya.png',
       text:'我的'
     }]
+    this.initPage();
   }
-
 }
