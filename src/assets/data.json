@@ -1,3 +1,9 @@
-{
-  "value": "AngularClass"
-}
+[{
+    "src": "./assets/img/sc.png",
+    "activeSrc": "./assets/img/sca.png",
+    "text": "行程"
+}, {
+    "src": "./assets/img/my.png",
+    "activeSrc": "./assets/img/mya.png",
+    "text": "我的"
+}]
